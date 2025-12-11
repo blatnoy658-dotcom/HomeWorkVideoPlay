@@ -44,6 +44,6 @@ jobs:
           pip install chromedriver-autoinstaller
 
       - name: Run tests under Xvfb
-        # xvfb-run will start a virtual X server automatically
+
         run: |
           xvfb-run -a -s "-screen 0 1920x1080x24" python -m pytest tests/ -q
