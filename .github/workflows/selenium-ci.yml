@@ -21,5 +21,5 @@ jobs:
           env:
             DISPLAY: 99
           run: |
-            sudo apt-get install -y xvfb
+            sudo apt-get install -y Xvfb
             Xvfb: 99 & python -m pytest tests/
